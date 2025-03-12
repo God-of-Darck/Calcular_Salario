@@ -1,0 +1,91 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body {
+    font-family: Arial, sans-serif !important;
+    background-color: #1E1E1E !important;
+}
+
+header {
+    background-color: #3F3F3F !important;
+    color: rgb(255, 255, 255) !important;
+    padding: 1em, !important;
+}
+
+.header {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+footer {
+    background-color: #3F3F3F !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 0.9em !important;
+}
+
+.box_logo {
+    text-align: center !important;
+    margin-top: 0.7em !important;
+}
+
+.logo {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+}
+
+.txtenpresa {
+    text-align: left !important;
+    font-size: 50px !important;
+    text-decoration: none !important;
+    color: #3251A0 !important;
+}
+
+.conteudo {
+    background-color: #0796BD !important;
+    padding: 0em !important;
+    margin-top: 1em !important;
+    border-radius: 30px !important;
+    width: 100% !important;
+    text-align: center;
+
+}
+
+.Principal {
+    margin-left: 36% !important;
+    margin-right: 36% !important;
+    margin-top: 2% !important;
+    margin-bottom: 1% !important;
+}
+
+
+@media (min-width: 200px) and (max-width: 1024px) {
+    
+   .box_logo{
+    padding-left: 1em !important;
+   }
+
+   .txtenpresa{
+    padding-left: 1em !important;
+    font-size: 25px !important;
+   }
+   
+    .conteudo {
+        background-color: #32AABF !important;
+        padding: 1em !important;
+        margin-top: 2em !important;
+        border-radius: 10px !important;
+        width: 130%;
+    }
+
+    .Principal {
+        text-align: center;
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+        margin-top: 1% !important;
+        margin-bottom: 50% !important;
+    }
+}
