@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="row header">
@@ -16,27 +18,41 @@
             </div>
             <div class="col-11">
                 <a class="txtenpresa">Nexus enterprise</a>
-
             </div>
         </div>
     </header>
     <main class="Principal">
-            <div class="row conteudo">
-                <div class="col-2">
-                   
-                </div>
-                <div class="col-10">
-                    
-                </div>
+        <div class="row conteudo">
+            <div class="titileConteudo">
+                <h2 class="txtTitile">Calcular seu calario liquido</h2>
             </div>
-       
+            <div class="container">
+                <form id="salaryForm">
+                    <label>Salário Bruto</label>
+                    <input type="number" id="salarioBruto" placeholder="0,00">
+                    
+                    <label>Benefícios</label>
+                    <input type="number" id="beneficios" placeholder="0,00">
+                    
+                    <label>Dependentes</label>
+                    <input type="number" id="dependentes" placeholder="0">
+                    
+                    <label>Outros descontos</label>
+                    <input type="number" id="outrosDescontos" placeholder="0,00">
+                    
+                    <button type="button" onclick="calcularSalario()">Calcular Salário</button>
+                </form>
+
+            </div>
+
     </main>
     <footer class="fixed-bottom">
-        <h4> &copy; Todos os direitos Reservados. <br> My Pagina Web</h4>
+        <h4 class="txtFooter"> &copy; Todos os direitos Reservados. <br> My Pagina Web</h4>
     </footer>
 
 </body>
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script defer src="/js/script.js"></script>
+
 </html>
