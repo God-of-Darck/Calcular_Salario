@@ -2,70 +2,85 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Calculo</title>
-    <!-- Latest compiled and minified CSS -->
+    <!-- Ajusta a exibição para dispositivos móveis -->
+    <title>Nexus Calculo</title> <!-- Define o título da página -->
+    <!-- Última versão compilada do Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/Captura de tela 2025-03-10 211354.png">
+    <link rel="stylesheet" href="css/style.css"> <!-- Link para um arquivo CSS personalizado -->
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://i.pinimg.com/1200x/9f/48/b0/9f48b0ac1223c948fafc25a7812bbc01.jpg"> <!-- Ícone da página -->
 </head>
 
 <body>
     <header>
-        <div class="row header">
+        <!-- Cabeçalho da página -->
+        <div class="row">
+            <!-- Linha do Bootstrap para layout responsivo -->
             <div class="col-1 box_logo">
-                <img class="logo" src="/img/Captura de tela 2025-03-10 211354.png" alt="">
+                <!-- Coluna para o logo -->
+                <img class="logo" src="https://i.pinimg.com/1200x/9f/48/b0/9f48b0ac1223c948fafc25a7812bbc01.jpg" alt="">
+                <!-- Imagem do logo -->
             </div>
-            <div class="col-11">
-                <a class="txtenpresa">Nexus enterprise</a>
+            <div class="col-11 txtEn">
+                <!-- Coluna para o nome da empresa -->
+                <a class="txtenpresa">Nexus enterprise</a> <!-- Nome da empresa -->
             </div>
         </div>
     </header>
     <main class="Principal">
+        <!-- Conteúdo principal da página -->
         <div class="row conteudo">
+            <!-- Linha para organizar o conteúdo -->
             <div class="titileConteudo">
-                <h2 class="txtTitile">Calcular seu salario liquido</h2>
+                <!-- Seção de título -->
+                <h2 class="txtTitile">Calcular seu salário líquido</h2> <!-- Título principal -->
             </div>
             <div class="col-sm-6 container">
+                <!-- Coluna para o formulário -->
                 <form id="salaryForm">
+                    <!-- Formulário para entrada de dados -->
                     <label>Salário Bruto</label>
-                    <input type="number" id="salarioBruto" placeholder="0,00">
-                    
+                    <input type="number" id="salarioBruto" placeholder="0,00"> <!-- Campo para o salário bruto -->
+
                     <label>Benefícios</label>
-                    <input type="number" id="beneficios" placeholder="0,00">
-                    
+                    <input type="number" id="beneficios" placeholder="0,00"> <!-- Campo para benefícios -->
+
                     <label>Dependentes</label>
-                    <input type="number" id="dependentes" placeholder="0">
-                    
+                    <input type="number" id="dependentes" placeholder="0" step="1">
+                    <!-- Campo para número de dependentes -->
+
                     <label>Outros descontos</label>
-                    <input type="number" id="outrosDescontos" placeholder="0,00">
-                    
+                    <input type="number" id="outrosDescontos" placeholder="0,00"> <!-- Campo para outros descontos -->
+
                     <button type="button" onclick="calcularSalario()">Calcular Salário</button>
+                    <!-- Botão para calcular o salário -->
                 </form>
-                
             </div>
             <div class="col-sm-6 container2">
-                <h2>Seu salario liquido:</h2>
-                <p class="valuer" id="pSL"></p>
+                <!-- Coluna para os resultados -->
+                <h2>Seu salário líquido:</h2>
+                <p class="valuer" id="pSL"></p> <!-- Exibição do salário líquido -->
                 <h2>Valor do desconto do INSS:</h2>
-                <p class="valuer" id="pINSS"></p>
-                <h2>valor do desconto do IRRF:</h2>
-                <p class="valuer" id="pIRRF"></p>
-                <h2>valor dos outros descontos:</h2>
-                <p class="valuer" id="pOTD"></p>
-                <h2>desconto dos dependentes:</h2>
-                <p class="valuer" id="dDD"></p>
+                <p class="valuer" id="pINSS"></p> <!-- Exibição do desconto do INSS -->
+                <h2>Valor do desconto do IRRF:</h2>
+                <p class="valuer" id="pIRRF"></p> <!-- Exibição do desconto do IRRF -->
+                <h2>Valor dos outros descontos:</h2>
+                <p class="valuer" id="pOTD"></p> <!-- Exibição de outros descontos -->
+                <h2>Desconto dos dependentes:</h2>
+                <p class="valuer" id="dDD"></p> <!-- Exibição do desconto por dependentes -->
             </div>
         </div>
     </main>
     <footer class="fixed-bottom">
-        <h4 class="txtFooter"> &copy; Todos os direitos Reservados. <br> My Pagina Web</h4>
+        <!-- Rodapé fixo na parte inferior -->
+        <h4 class="txtFooter">&copy; Todos os direitos reservados. <br> Nexus enterprise</h4> <!-- Texto do rodapé -->
     </footer>
-
 </body>
-<!-- Latest compiled JavaScript -->
+
+<!-- Última versão compilada do Bootstrap JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script defer src="/js/script.js"></script>
+<script defer src="/js/script.js"></script> <!-- Script JavaScript personalizado -->
 
 </html>
