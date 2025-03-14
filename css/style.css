@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;
     background-color: #1E1E1E !important;
 }
 
@@ -39,7 +39,8 @@ label {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    margin: 20px auto !important; /* Centraliza o botão horizontalmente */
+    margin: 20px auto !important;
+    /* Centraliza o botão horizontalmente */
 }
 
 input {
@@ -55,7 +56,8 @@ input {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    margin: 0px auto !important; /* Centraliza o botão horizontalmente */
+    margin: 0px auto !important;
+    /* Centraliza o botão horizontalmente */
 }
 
 button {
@@ -72,7 +74,13 @@ button {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    margin: 20px auto !important; /* Centraliza o botão horizontalmente */
+    margin: 20px auto !important;
+    /* Centraliza o botão horizontalmente */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444 !important; /* Uma cor um pouco mais clara para o hover */
 }
 
 .txtFooter {
@@ -100,8 +108,34 @@ button {
 .container {
     padding: 30px !important;
     border-radius: 10px !important;
+    /* width: 40% !important;
+    margin: 50px auto !important; */
+}
+
+.container2 {
+    padding: 30px !important;
+    border-radius: 10px !important;
     width: 40% !important;
     margin: 50px auto !important;
+    max-width: 7000px !important;
+    background-color: #ffffff !important;
+    padding: 0em !important;
+    margin-top: 3.5em !important;
+    border-radius: 16px !important;
+    height: 500px !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+    letter-spacing: 1px !important;
+    word-spacing: 5px !important;
+    gap: 11px; /* Adiciona espaçamento entre os elementos */
+    display: flex;
+    flex-direction: column; /* Para organizar os itens verticalmente */
+    align-items: center; /* Centraliza no eixo X */
+    justify-content: center; /* Centraliza no eixo Y (se necessário) */
+}
+
+.valuer{
+    font-size: 20px;
 }
 
 .conteudo {
@@ -112,18 +146,17 @@ button {
     border-radius: 16px !important;
     display: flex !important;
     width: 100% !important;
-    height: 700px !important;
+   
     text-align: center !important;
-
 }
 
-.titileConteudo{
+.titileConteudo {
     padding-top: 2em !important;
     text-align: center !important;
     color: white !important;
 }
 
-.txtTitile{
+.txtTitile {
     font-size: 50px !important;
 }
 
@@ -147,11 +180,11 @@ button {
         height: 30px !important;
         border-radius: 50% !important;
     }
-    
+
     .txtenpresa {
         padding-left: 2em !important;
         font-size: 25px !important;
-        
+
     }
 
     .conteudo {
@@ -161,7 +194,8 @@ button {
         border-radius: 10px !important;
         width: 130%;
     }
-    .txtTitile{
+
+    .txtTitile {
         font-size: 20px !important;
     }
 
