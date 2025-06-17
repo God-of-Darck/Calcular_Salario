@@ -20,6 +20,7 @@ header {
 
 /* Estiliza o rodapé da página */
 footer {
+    /* padding-top: 4em !important; */
     background-color: #3F3F3F !important;
     color: white !important;
     text-align: center !important;
@@ -117,7 +118,6 @@ button:hover {
     width: 40% !important;
     margin: 50px auto !important;
     background-color: #ffffff !important;
-    padding: 0em !important;
     margin-top: 3.5em !important;
     border-radius: 16px !important;
     text-align: center !important;
@@ -144,6 +144,7 @@ button:hover {
     border-radius: 16px !important;
     width: 100% !important;
     text-align: center !important;
+
 }
 
 /* Estiliza o título do conteúdo */
